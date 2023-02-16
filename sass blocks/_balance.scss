@@ -1,0 +1,101 @@
+.balance {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #F9F9FF;
+  padding: 45px 50px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    &-title {
+      font-size: 24px;
+      font-weight: 200;
+      color: #918EA1;
+    }
+    &-number {
+      margin-top: 40px;
+      font-size: 32px;
+      font-weight: 700;
+
+    }
+    &-daily {
+      display: flex;
+      margin-top: 40px;
+    }
+    &_income {
+      margin-right: 30px;
+      &-number {
+        margin-bottom: 10px;
+      }
+      &-title {
+        color: #918EA1;
+      }
+    }
+  }
+  &__visas {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    left: 40%;
+    top: 0;
+    background-color: white;
+    height: 100%;
+  }
+  &__item {
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    left: 55%;
+    top: 50%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    transform: translateY(-50%);
+    background-color: green;
+    color: #ffffff;
+    &_left{
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      gap: 25px;
+      &-number{
+        font-size: 20px;
+      }
+      &-visa {
+        span {
+          color: #8A8DE7;
+        }
+      }
+    }
+    &-chip {
+      position: absolute;
+      top: 10%;
+      left: 93%;
+      transform: translate(-93%, -10%);
+      img{
+        width: 20px;
+        left: 20px;
+      }
+    }
+    &-date {
+      font-size: 10px;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 105%;
+      left: 96%;
+      transform: translate(-96%, -105%);
+    }
+  }
+  &__item_active{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 1%;
+    border-radius: 20px;
+    transform: translateY(-50%);
+    background: linear-gradient(to left, #283593, #1976d2);
+  }
+}

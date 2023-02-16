@@ -1,0 +1,65 @@
+.leftBar {
+  width: 10%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: absolute;
+  &__mainIcon {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    img{
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &__icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &_icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      text-align: center;
+      &-active{
+        background-color: rgb(249, 249, 253);
+        &:after {
+          content: '';
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background-color: rgb(255, 84, 61);
+        }
+      }
+      &:hover{
+        background-color: rgb(249, 249, 253);
+        &:after {
+          content: '';
+          position: absolute;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background-color: rgb(255, 84, 61);
+        }
+      }
+      img{
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+  &__bottom {
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
